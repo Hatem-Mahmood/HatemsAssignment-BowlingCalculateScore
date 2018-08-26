@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculateBowlingScoreComponent implements OnInit {
 
+  frames=[];
+  rolls=[];
+  first:number;
+  second:number;
+  
   constructor() { }
 
   ngOnInit() {
