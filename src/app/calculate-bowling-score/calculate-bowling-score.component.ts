@@ -70,5 +70,9 @@ get remainingPinsDidNotKnockedDown(){
   } 
   return remainingPinsArray;
 }
+ // return max rolls depen on the type of roll (strike ,spare,normal)
+get maxrollsCount(){
+  return this.rolls[18]==10 || this.rolls[9]==10?21:20
+}
 
 }
