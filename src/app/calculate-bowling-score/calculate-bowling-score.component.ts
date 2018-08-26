@@ -75,4 +75,22 @@ get maxrollsCount(){
   return this.rolls[18]==10 || this.rolls[9]==10?21:20
 }
 
+ // submit score points after selected them 
+submitScore(){
+  if (this.first==10) {    
+    if(this.rolls.length>this.maxrollsCount-10)return;
+     this.roll(this.first);
+     return;
+  } else if(this.first+this.second==10){
+    if(this.rolls.length>this.maxrollsCount)return;
+     this.roll(this.first);
+     this.roll(this.second);
+  } else{
+      if(this.rolls.length>=this.maxrollsCount)return;
+  this.roll(this.first);
+  this.roll(this.second);
+  }  
+
+}
+
 }
