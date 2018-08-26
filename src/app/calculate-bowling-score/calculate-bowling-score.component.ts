@@ -91,6 +91,9 @@ submitScore(){
   this.roll(this.second);
   }  
 
+  this.first=null;
+  this.second=null;
+
 }
 
 }
