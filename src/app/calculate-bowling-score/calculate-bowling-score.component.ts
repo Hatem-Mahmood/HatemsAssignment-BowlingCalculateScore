@@ -11,10 +11,14 @@ export class CalculateBowlingScoreComponent implements OnInit {
   rolls=[];
   first:number;
   second:number;
-  
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  roll(pins){
+    this.rolls.push(pins);
+ }
 
 }
