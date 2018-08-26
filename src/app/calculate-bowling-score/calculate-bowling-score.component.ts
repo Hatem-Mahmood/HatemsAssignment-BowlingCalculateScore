@@ -62,4 +62,13 @@ export class CalculateBowlingScoreComponent implements OnInit {
   }
 }
 
+get remainingPinsDidNotKnockedDown(){
+  var numberOfTheRemainingPins= 10-(this.first|0);
+  var remainingPinsArray=[null];
+  for (let i = 0; i <= numberOfTheRemainingPins; i++) {
+    remainingPinsArray.push(i);
+  } 
+  return remainingPinsArray;
+}
+
 }
