@@ -23,6 +23,9 @@
     <select class="txt" name="second"  [(ngModel)]="second">
       <option *ngFor="let n of remainingPinsDidNotKnockedDown"  [ngValue]="n">{{n}}</option>
     </select>
-    <input type="submit" class="btn" value="Calculate Score" (click)="submitScore()">
+    <input type="submit" class="btn" value="Calculate Score" (click)="submitScore()" 
+    [disabled]="first==null"
+    [ngClass]="{'btnDisabled': first==null}"
+    >
   
   </div>

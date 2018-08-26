@@ -77,9 +77,11 @@ get maxrollsCount(){
 
  // submit score points after selected them 
 submitScore(){
+  var self=this;
   if (this.first==10) {    
-    if(this.rolls.length>this.maxrollsCount-10)return;
+    if(this.rolls.length>this.maxrollsCount-10){ clearInputs(); return;}
      this.roll(this.first);
+     clearInputs();
      return;
   } else if(this.first+this.second==10){
     if(this.rolls.length>this.maxrollsCount)return;
@@ -90,9 +92,13 @@ submitScore(){
   this.roll(this.first);
   this.roll(this.second);
   }  
+  clearInputs();
+  
+  function clearInputs(){
+      self.first=null;
+  self.second=null;
+  }
 
-  this.first=null;
-  this.second=null;
 
 }
 

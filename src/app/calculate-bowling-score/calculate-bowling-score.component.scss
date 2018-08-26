@@ -33,6 +33,14 @@ input.btn{
     cursor: pointer;
 }
 
+input.btnDisabled{
+  background: grey;
+  color: #625959;
+  cursor: context-menu
+
+  ;
+}
+
 .life-container {
     background: #3fa0e1;
     padding: 1em;
