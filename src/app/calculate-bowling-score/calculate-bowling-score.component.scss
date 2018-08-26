@@ -1,0 +1,66 @@
+$border:0;
+$myWidth:80%;
+.container{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.col{
+    padding: .4em 1.3em;
+}
+
+.color-dark{
+    background: #2885c4;
+}
+.color-light{
+    background: #57b3f1;
+}
+
+input.txt{
+    border: $border;
+    padding: 1em;
+    width: $myWidth;
+    margin-bottom: 2em;
+}
+
+input.btn{
+    border: $border;
+    display: block;
+    padding: 1em 3em;
+    background: #a5f883;
+    color: #003a61;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.life-container {
+    background: #3fa0e1;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.alert-message{
+    background: #f18d8d;
+    padding: 1em;
+    border-radius: 3px;
+    width: $myWidth;
+}
+
+select{
+    border: $border;
+    padding: 1em;
+    width: $myWidth;
+    margin-bottom: 2em;
+}
+
+.badge{
+    border-radius: 10px;
+    background: white;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
